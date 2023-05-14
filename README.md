@@ -167,7 +167,23 @@ Accept the request of the student with the specified ID to be assigned to the te
 
 Dismiss the request of the student with the specified ID to be assigned to the teacher with the specified ID.
  
-# 
+# Issues
+When debugging , This is the bug I was facing and still figuring to solve.
+
+`The called method's class, com.mongodb.MongoClientSettings, is available from the following locations:
+
+    jar:file:/home/kim/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-core/4.8.2/7eefb22e3cd5992778ea6cd6e991e0a4070917a5/mongodb-driver-core-4.8.2.jar!/com/mongodb/MongoClientSettings.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    com.mongodb.MongoClientSettings: file:/home/kim/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-core/4.8.2/7eefb22e3cd5992778ea6cd6e991e0a4070917a5/mongodb-driver-core-4.8.2.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes com.mongodb.client.internal.MongoClientImpl and com.mongodb.MongoClientSettings`
+
+
 
 
 
