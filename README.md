@@ -99,6 +99,36 @@ teacherId: The ID of the teacher to assign to the student.
 studentId: The ID of the student to assign the teacher to.
 
 
+##
+# Registration 
+```
+POST /registered
+```
+# authentication 
+```
+POST /auth: 
+```
+
+## Get Student Profile
+```
+GET /students/{studentId}
+```
+ 
+## Student Controller
+This controller handles all the endpoints related to student profile and interactions.
+# Get Student Profile
+```
+PUT /students/{studentId}
+```
+# Update Student Profile
+```
+PUT /students/{studentId}
+```
+# Reset Student Password
+```
+PUT /students/{studentId}/password
+```
+
 
 
 
