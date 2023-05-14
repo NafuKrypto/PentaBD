@@ -75,7 +75,7 @@ Assigns a teacher to a student.
  
 
 
-##
+## 
 Registration 
 ```
 POST /registered
@@ -84,6 +84,9 @@ authentication
 ```
 POST /auth: 
 ```
+## Teacher Profile
+
+## Student Profile
  Get Student Profile
 ```
 GET /students/{studentId}
@@ -110,7 +113,60 @@ POST /students/{studentId}/request/{teacherId}
 ```
 Sends a request for a student with the given studentId to be assigned to a teacher with the given teacherId
 
+Sure! Here is the API documentation for the Teacher Controller:
 
+## Teacher Controller API Endpoints
+
+### Get Teacher Profile
+
+`GET /teachers/{teacherId}`
+
+Get the profile of the teacher with the specified ID.
+
+ 
+
+ 
+### Update Teacher Profile
+
+`PUT /teachers/{teacherId}`
+
+Update the profile of the teacher with the specified ID.
+
+ 
+
+ 
+
+ 
+
+ 
+
+### Reset Teacher Password
+
+`PUT /teachers/{teacherId}/password`
+
+Reset the password of the teacher with the specified ID.
+
+### Get Students by Advisor
+
+`GET /teachers/{teacherId}/students`
+
+Get a list of students assigned to the teacher with the specified ID.
+
+ 
+### Accept Student Request
+
+`PUT /teachers/{teacherId}/students/{studentId}/accept`
+
+Accept the request of the student with the specified ID to be assigned to the teacher with the specified ID.
+
+ 
+
+### Dismiss Student Request
+
+`PUT /teachers/{teacherId}/students/{studentId}/dismiss`
+
+Dismiss the request of the student with the specified ID to be assigned to the teacher with the specified ID.
+ 
 
 
 
