@@ -45,16 +45,6 @@ POST /admin/teachers
 ```
 Adds a new teacher.
 
-Request Body:
-
-json
-Copy code
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "email": "johndoe@example.com",
-  "password": "password"
-}
 Add a student
 ```
 POST /admin/students
