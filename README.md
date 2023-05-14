@@ -129,6 +129,11 @@ PUT /students/{studentId}
 PUT /students/{studentId}/password
 ```
 
+# Send Advisor Request
+```
+POST /students/{studentId}/request/{teacherId}
+```
+Sends a request for a student with the given studentId to be assigned to a teacher with the given teacherId
 
 
 
