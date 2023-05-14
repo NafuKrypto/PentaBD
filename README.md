@@ -53,14 +53,7 @@ Adds a new student.
 
 Request Body:
 
-json
-Copy code
-{
-  "firstName": "Jane",
-  "lastName": "Doe",
-  "email": "janedoe@example.com",
-  "password": "password"
-}
+ 
 Add a role to a user
 ```
 PUT /admin/users/{userId}/role/{role}
@@ -79,14 +72,7 @@ POST /admin/assign-teacher/{teacherId}/{studentId}
 ```
 Assigns a teacher to a student.
 
-Returns:
-
-200 OK if successful
-400 Bad Request if unsuccessful
-Request Parameters:
-
-teacherId: The ID of the teacher to assign to the student.
-studentId: The ID of the student to assign the teacher to.
+ 
 
 
 ##
